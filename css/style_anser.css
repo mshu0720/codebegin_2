@@ -1,0 +1,296 @@
+body{
+  background-color: #d2d2d2;
+}
+
+.container{
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.h-title{
+  height: 100px;
+  border-top: 5px solid blue;
+  position: relative;
+}
+
+.h-title .h-logo{
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  /* 下から50％移動 */
+  transform:translateY(-50%);
+}
+
+.h-navi{
+  border-top: 1px solid #d2d2d2;
+}
+
+/* 字幅が大きくカラム落ちが発生したので追加 */
+.h-menu{
+  /* letter-spacingは字幅を指定する */
+  /* -.4em = -0.4em */
+  letter-spacing: -.4em;
+}
+
+.h-list{
+  display:inline-block;
+  /* 全体の幅100％に対して6等分する */
+  width: calc(100%/6);
+  position: relative;
+  letter-spacing: normal;
+  /* 子要素のh-l-boxでabsoluteを実施したため
+  親要素のh-listの高さが０になり、下の要素と重なる問題発生 
+  高さを付与しなおす*/
+  height: 64px;
+  border-right: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  vertical-align: bottom;
+}
+.h-list:hover .h-l-top{
+  color: #0e36ca;
+}
+
+.h-list:hover{
+  background-color: #e6ebfa;
+}
+.h-list:hover .h-l-box:before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left: 4px;
+}
+
+.h-l-box{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 90%;
+ text-align: center;
+}
+
+.h-l-top{
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 4px;
+}
+
+.h-l-bottom{
+  font-size: 10px;
+  color: #bababa;
+  text-align: center;
+}
+
+.active{
+  background-color: #e6ebfa;
+}
+
+.active .h-l-box:before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #0e36ca;
+  left: 4px;
+}
+
+.active .h-l-top{
+  color: #0e36ca;
+}
+
+.h-image{
+  max-width:100%;
+  height: auto;
+}
+
+.content{
+  padding: 24px;
+  overflow: hidden;
+}
+
+.main{
+  float: left;
+  width: 70%;
+}
+
+.m-h2{
+  background: #0f3bda;
+  color: #fff;
+  padding: 14px 12px 14px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* first-letterはセレクターの一番最初の頭文字に
+スタイルをつける疑似要素 */
+.m-h2::first-letter{
+  border-left: 3px solid #8e9eef;
+  padding-left: 16px;
+}
+
+.m-h3{
+  background: #f6f6f6;
+  color: #666666;
+  padding: 14px 12px 14px 24px;
+  border-radius: 4px;
+  font-size: 17px;
+  border: #ccc 1px solid;
+}
+
+.m-section{
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.m-info{
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 15px;
+
+}
+
+.m-info-date{
+  float: left;
+  padding: 8px 32px 8px 0;
+  color: blue;
+
+}
+
+.m-info-content{
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.m-info-new{
+  background: red;
+  font-size: 11px;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.m-log{
+  text-align: right;
+  /* ptと入力するとpadding-topが出る */
+  padding-top: 24px;
+}
+
+.m-log a{
+  color: #666;
+}
+
+.m-p{
+  font-size: 15px;
+  color:#666666;
+  margin: 24px 16px;
+  line-height: 2;
+}
+
+.m-point{
+  color: red;
+}
+
+.side{
+  float: right;
+  width: 25%;
+}
+
+.s-framebox{
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  margin-bottom: 24px;
+  color: #666666;
+}
+
+.s-box{
+  margin-bottom: 24px;
+  color: #666666;
+}
+
+.s-h4{
+  padding: 28px 10px;
+  border-top: 5px solid blue;
+  background: #eeeeee;
+  color: #666666;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.s-list{
+  border-bottom: 1px solid #d2d2d2;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.s-list:hover{
+  background: white;
+}
+
+.s-list a{
+  /* 下線を消す */
+  text-decoration: none;
+  color:#666666;
+}
+
+.s-list:hover a{
+  color: blue;
+}
+
+.s-img{
+  float: left;
+  width: 20%;
+  margin-right: 5px;
+}
+
+.s-l-title{
+  color: blue;
+  font-size: 11px;
+}
+
+.s-l-description{
+  font-size: 11px;
+}
+
+.s-company-title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.s-company-info{
+font-size: 11px;
+text-align: center;
+line-height: 1.5;
+}
+
+.footer{
+  text-align:center;
+  font-size:13px;
+  margin-top:50px;
+  /* clearはfloatを解除するもの
+  bothはrightもleftも適用 */
+  clear: both;
+  background: blue;
+  color: #ffffff;
+  padding: 16px 0;
+  line-height: 2;
+}
+
+.footer-under{
+  font-size: 12px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer a:hover{
+  color: blue;
+}
