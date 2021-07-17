@@ -179,6 +179,13 @@ table{
   color: red;
 }
 
+.m-h{
+  margin-left: 52px;
+  margin-right: 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
 .m-tension{
   color:red;
   font-weight: bold;
