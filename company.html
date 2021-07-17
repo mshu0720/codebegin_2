@@ -75,10 +75,9 @@
                 <p>
                   当テンプレートは、パソコン、スマホ、タブレットでhtml共通のレスポンシブWEBデザインになっております。<br>
                   古いブラウザ（※特にIE8以下）で閲覧した場合にCSSの一部が適用されない（角を丸くする加工やグラデーションなどの加工等）のでご注意下さい。
+                </p>  
                 </p>
-    
-                </p>
-              <h3 class="tension">各デバイスごとのレイアウトチェックは</h3>
+              <h3>各デバイスごとのレイアウトチェックは</h3>
                 <p>
                   最終的なチェックは実際のタブレットやスマホで行うのがおすすめですが、臨時チェックは最新のブラウザ(IEならIE10以降)で行う事もできます。ブラウザの幅を狭くしていくと、各端末サイズに合わせたレイアウトになります。
                 </p>
@@ -99,44 +98,59 @@
             <!--セクション３  -->
             <section>
               <h2>当テンプレートの使い方</h2>
-              <h3>注意：当テンプレートにはメインメニューが「２箇所」入っています</h3>
+              <h3 class="m-h3">注意：当テンプレートにはメインメニューが「２箇所」入っています</h3>
               <p>
                 パソコンなどの大きな端末「menubar（幅801px以上）」向けと、スマホなどの小さな端末「menubar-s（幅800px以下）」向けがそれぞれ入っています。大きな端末向けは編集ソフトで見れると思いますが、小さな端末向けは見えないと思いますのでhtml側で編集して下さい。
               </p>
               <h3>titleタグ、copyright、metaタグ、他の設定</h3>
               <p>
-                titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。
+                <span class="m-tension">titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</span>
                 まず、htmlソースが見れる状態にして、
-                <title>ビジネス・企業向け 無料ホームページテンプレート tp_biz30</title>
+                <br>
+                <span class="m-inline">&lt;title&gt;ビジネス・企業向け 無料ホームページテンプレート tp_biz30&lt;/title&gt;</span>
+                <br>
                 を編集しましょう。
                 あなたのホームページ名が「Sample Company」だとすれば、
-                <title>Sample Company</title>
+                <br>
+                <span class="m-inline">&lt;title&gt;Sample Company&lt;/title&gt;</span>
+                <br>
                 とすればＯＫです。SEO対策もするなら冒頭に重要なワードを入れておきましょう。
               </p>
               <p>
-                copyrightを変更しましょう。
+                <span class="m-tension">copyrightを変更しましょう。</span>
+                <br>
                 続いてhtmlの下の方にある、
-                Copyright© Sample Company All Rights Reserved.
+                <br>
+                <span class="m-inline">Copyright© Sample Company All Rights Reserved.</span>
+                <br>
                 の部分もあなたのサイト名に変更します。
               </p>
               <p>
-                metaタグを変更しましょう。
+                <span class="m-tension">metaタグを変更しましょう。</span>
+                <br>
                 htmlソースが見える状態にしてmetaタグを変更しましょう。
               </p>
               <P>
                 ソースの上の方に、
-                content="ここにサイト説明を入れます"
+                <br>
+                <span class="m-inline">content="ここにサイト説明を入れます"</span>
+                <br>
                 という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もありますので、見た人が来訪したくなるような説明文を簡潔に書きましょう。
               </P>
               <P>
                 続いて、その下の行の
-                content="キーワード１,キーワード２,～～～"
+                <br>
+                <span class="m-inline">content="キーワード１,キーワード２,～～～"</span>
+                <br>
                 も設定します。ここはサイトに関係のあるキーワードを入れる箇所です。10個前後ぐらいあれば充分です。キーワード間はカンマ「,」で区切ります。
               </P>
               <p>
-                h1ロゴのaltタグも変更しましょう。
+                <span class="m-tension">h1ロゴのaltタグも変更しましょう。</span>
+                <br>
                 html側に、
-                alt="Sample Company"
+                <br>
+                <span class="m-inline">alt="Sample Company"</span>
+                <br>
                 となっている箇所があるので、この部分もあなたのサイト名に変更しましょう。
               </p>
               <h3>上部のロゴ画像について</h3>
@@ -144,65 +158,96 @@
                 文字なしの土台画像がbaseフォルダに入っていますのでそれにサイト名をのせてimagesフォルダに上書きして下さい。画像の大きさは自由に変更してもらっても構いませんがある程度大きくしておいた方が高解像度の端末で鮮明に見えます。
               </p>
               <p>
-                ロゴサイズ変更は
+                <span class="m-tension">ロゴサイズ変更は</span>
+                <br>
                 cssフォルダのstyle.cssの「header #logo img」のwidthの数字で変更できます。各端末サイズごとに設定がある場合があるので注意して下さい。
               </p>
               <h3>トップページのスライドショーについて</h3>
               <p>
-                css3に対応した環境でしか動作しません。<br>
+                <span class="m-tension">css3に対応した環境でしか動作しません。</span>
+                <br>
                 css3に対応していない古い環境（IEなら8以下）から見た場合、「最後」の画像のみが固定表示される事になります。<br>
                 「最初」の画像を表示させていたい場合は<a href="">こちらをご覧下さい。</a>
               </p>
               <p>
-                画像を入れ替えたい場合
+                <span class="m-tension">画像を入れ替えたい場合</span>
+                <br>
                 「image1.jpg」「image2.jpg」「image3.jpg」の３枚のjpg画像を用意してimagesフォルダに上書きして下さい。大きさはバラバラでも構いませんが、必ず「縦横比」を合わせて下さい。
+                <br>
                 また、拡張子が「jpeg」や「JPG」と少し違った場合にうまく表示できない可能性があるので「jpg」で統一して下さい。画像を「jpg」にできない場合はhtml側の拡張子指定を変更しても構いません。
               </p>
               <p>
-                ループを一回で終了したい場合
+                <span class="m-tension">ループを一回で終了したい場合</span>
+                <br>
                 cssフォルダのslide.cssの、
+                <br>
                 @keyframes slide3 {
+                <br>
                 の、
+                <br>
                 95% {opacity: 0;}
+                <br>
                 100% {opacity: 0;}
+                <br>
                 を、以下に変更。
+                <br>
                 95% {opacity: １;}
+                <br>
                 100% {opacity: １;}
               </p>
               <p>
                 続いて、
+                <br>
                 .slide1,.slide2,.slide3 {
+                <br>
                 の、
+                <br>
                 animation-iteration-count:infinite;
+                <br>
                 を以下に変更。
+                <br>
                 animation-iteration-count:1;
               </p>
               <p>
-                固定画像にしたい場合
+                <span class="m-tension">固定画像にしたい場合</span>
+                <br>
                 index.htmlのhtmlの上の方にある、
-                <link rel="stylesheet" href="css/slide.css">
+                <br>
+                &lt;link rel="stylesheet" href="css/slide.css"&gt;
+                <br>
                 の１行を削除。
+                <br>
                 画像がすべて表示されるので、使わない画像を削除すればOKです。画像を囲っているasideタグなどはレイアウト設定が入っているので削除しないよう注意して下さい。
               </p>
               <p>
-                速度や枚数などの調整
+                <span class="m-tension">速度や枚数などの調整</span>
+                <br>
                 cssフォルダのslide.cssで行って下さい。解説も入っています。
-                <a href="">スライドショーに関する詳しい使い方はこちら。</a>
+                <br>
+                <a href="#">スライドショーに関する詳しい使い方はこちら。</a>
               </p>
               <h3>スクロール中に出る「↑」アイコンについて</h3>
               <p>
                 fixmenu_pagetop.jsで動作の制御を、fixmenu_pagetop.cssでボタンデザインを設定しています。
+                <br>
                 ボタンの出現ポイントは、現在350pxの場所になっています。変更したい場合はfixmenu_pagetop.jsの34行目あたりにある、
+                <br>
                 offsettop = 350;
+                <br>
                 の350を変更して下さい。
               </p>
               <h3>現在ページ表示中のメニューについて</h3>
               <p>
                 当ページでいえば上部メインメニューの「会社概要（COMPANY）」に色がついていますが、その設定の説明です。
+                <br>
                 通常は、
-                <li><a href="">メニュー名</a></li>
+                <br>
+                &lt;li&gt;&lt;a href=""&gt;メニュー名&lt;/a&gt;&lt;/li&gt;
+                <br>
                 のようになっていますがこれを、
-                <li class="current">・・・
+                <br>
+                &lt;li <span class="m-point">class="current"</span>&gt;・・・
+                <br>
                 とする事で色がつきます。自動で色がつくわけではないのでご注意下さい。
               </p>
               <h3>１カラムレイアウトでも使えます</h3>
@@ -211,7 +256,9 @@
               </p>
               <h3>左右のブロックを入れ替えたい場合</h3>
               <p>cssフォルダのstyle.cssの、
+                <br>
                 #mainの「float: left;」を「float: right;」に、
+                <br>
                 #subの「float: right;」を「float: left;」にする
               </p>
               <h3>スマホなどの小さな端末からボタンクリックでPC画面を表示させたい方へ</h3>
