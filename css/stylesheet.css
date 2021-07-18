@@ -356,6 +356,55 @@ h4{
   margin-bottom:300px;
 }
 
+.form{
+  padding: 0 20px;
+}
+
+.f-name{
+  padding: 10px 20px 10px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.f-n-info{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+
+
+.i-name{
+  width: 40%;
+  margin-left: 10px;
+}
+
+.f-address{
+  padding: 10px 20px 10px;
+  border-bottom: 1px solid#999;
+}
+
+.f-a-info{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+
+.f-coment{
+  padding: 10px 20px 10px;
+  border-bottom: 1px solid #999;
+}
+
+.f-c-info{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+
+.f-submit{
+  text-align: center;
+}
+
+
 footer section{
   text-align: center;
   background-color: blue;
