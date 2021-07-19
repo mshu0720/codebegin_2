@@ -235,6 +235,53 @@ form{
   text-align: center;
 }
 
+.card{
+  border: 1px solid #ccc;
+  padding: 20px;
+  overflow: hidden;
+  line-height: 2;
+  position: relative;
+  box-shadow: 0px 5px 10px #ccc;
+  /* linear-gradientは第1引数が下（白）、第2引数が上（黒）へと
+  グラデーションする。 */
+  background: linear-gradient(#fff,#ddd);
+}
+
+.card:hover{
+  box-shadow: 0px 10px 20px #ccc;
+  /* 上に要素を動かしたい為、マイナスをつける。 */
+  transform: translateX(-5px);
+  /* 0.3秒かけて、動作 */
+  transition: .3s;
+}
+
+.card img{
+  width: 25%;
+  float: left;
+  margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #666;
+}
+
+.card h4{
+  color: blue;
+}
+
+.card::before{
+  content: "→";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: #666;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
 .side{
   float: right;
   width: 25%;

@@ -1,0 +1,28 @@
+ul{
+  color: #222;
+  font: normal 1.3em sans-serif;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+}
+
+li{
+  border: 1px solid;
+  margin: 12px 0;
+  padding: .6em;
+}
+
+/* 疑似要素を使うと */
+/* 引数に与えた偶数に要素を付与できる */
+/*  引数には偶数：even 奇数：odd でも表現できる*/
+li:nth-child(2n){
+  background:grey;
+
+}
+
+/* 最後の要素からさかのぼる＝nth-last-child */
+/* li:nth-last-child(2n){
+  background:grey;
+
+} */
