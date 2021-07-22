@@ -1,0 +1,49 @@
+body{
+  padding: 1% 26.5%;
+  background-color: #e0eef5;
+  color: #333;
+}
+
+p, div{
+  padding: 55px 0;
+  font: 3em sans-serif
+}
+
+a{
+  color: royalblue;
+  text-decoration: none;
+  font: 2.25em sans-serif;
+}
+
+/* 疑似要素を使うと */
+
+/* beforeは文字の直前にプロパティーをいれる */
+.phone::before {
+  /* utf-8の文字コードで2706は電話のマーク */
+  content: "\2706"
+}
+
+/* afterは文字の直後にプロパティーをいれる */
+.phone::after {
+  /* utf-8の文字コードで2706は電話のマーク */
+  content: "\2706"
+}
+
+.dload::before,
+.dload::after{
+  /* ””は中身のないブロックを表す */
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin:1px
+}
+/* bfとafはクラス要素の中の直前と直後に反映される。 */
+
+
+.dload {
+  border: 1px solid;
+  padding:10px
+}

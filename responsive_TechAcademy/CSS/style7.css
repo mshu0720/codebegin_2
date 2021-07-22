@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body{
+  padding: 1em 6em;
+}
+
+/* 装飾の練習 */
+p{
+  /* 1行目がインデントします。 */
+  text-indent: 10em;
+}
+
+h1{
+  /* 先頭のアルファベットが大文字になる */
+  /* text-transform: capitalize; */
+
+   /* すべてが小文字になる */
+  /* text-transform: lowercase; */
+
+ /* すべてが大文字になる */
+  text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+ul{
+  color: #222;
+  font: normal 1.3em sans-serif;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 ;
+  width: 70%;
+}
+
+li{
+  border: 1px solid;
+  margin: 12px 0;
+  padding: .6em;
+}
+
+/* 疑似要素を使うと */
+/* li:nth-child(2n){
+  background-color: grey;
+} */
+
+/* 上記ではpタグ以降から偶数の関係がリセットされるため
+7th childが偶数番目と認識される。 */
+
+
+/* liタグとして偶数番目を認識させる */
+/* li:nth-of-type(2n){
+  background-color: grey;
+} */
+
+/* 特定の要素の唯一の要素 */
+li:only-of-type{
+  background-color: grey;
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body{
+  padding: 1em 6em;
+}
+
+/* text-decorationの練習 */
+p{
+  text-decoration: underline;
+/* 文字の上に線を引く */
+  /* text-decoration: overline; */
+/* 文字の打消し線 */
+  /* text-decoration: line-through; */
+}
+
+a:hover{
+  text-decoration: none;
+}
