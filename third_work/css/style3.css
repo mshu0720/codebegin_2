@@ -193,29 +193,53 @@ body{
 
 .m-point{
   color: red;
+  font-weight: bolder;
 }
 
-table{
+.m-point-h{
+  color: red;
+}
+
+.m-inline{
+  background-color: #ccc;
+}
+
+p a{
+  text-decoration: underline;
+}
+
+p a:hover{
+  text-decoration: none;
+}
+
+
+.ta1{
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.ta1, .ta1 td, .ta1 th {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  word-break: break-all;
+}
+
+.ta1{
   border-collapse: collapse;
   margin-bottom: 24px;
 }
 
-th ,td{
-  border: 1px solid #ccc;
-  padding: 15px;
-}
-
-th{
+.ta1 th{
   width: 25%;
   text-align: center;
   vertical-align: middle;
 }
 
-td{
+.ta1 td{
   text-align: left;
 }
 
-td a{
+.ta1 td a{
   color: #666;
 }
 
