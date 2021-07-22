@@ -1,0 +1,413 @@
+/* CSSリセット追加 */
+h1,h2,h3,ul,li,aside{
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+body{
+  color: #666;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 2;
+  background-color: #d2d2d2;
+}
+
+header{
+  text-align: left;
+}
+
+.container{
+  max-width: 1400px;
+  margin:0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.h-title{
+  height: 100px;
+  border-top: 5px solid blue;
+}
+
+.logo{
+  width: 400px;
+  margin:30px auto;
+}
+
+#test_img3 img{
+  max-width: 100%;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p{
+  padding: 0 20px;
+}
+
+h2{
+  color: white;
+  background: blue;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+
+ h2::after{
+  content: "";
+  position: absolute;
+  top: 15px; left: 10px;
+  height: 50%;
+  border-left: 5px solid #889EF0;
+}
+
+
+
+h3{
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.content{
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+main{
+  float:left;
+  width: 75%;
+}
+
+
+section li{
+  border-bottom: 1px solid #999;
+  list-style: none;
+}
+
+
+.date{
+  color: blue;
+  margin-right: 40px;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+.ta1 th {
+  text-align: center;
+  border: 1px solid #999;
+  position: relative;
+  
+}
+
+.ta1 th.active::after{
+ content: "";
+ position: absolute;
+ top: 10px; left: 5px;
+ height: 70%;
+ border-left: 5px solid #889EF0;
+}
+
+.ta1 th:hover::after{
+ content: "";
+ position: absolute;
+ top: 10px; left: 5px;
+ height: 70%;
+ border-left: 5px solid #889EF0;
+}
+
+.ta1 td {
+  text-align: center;
+  border: 1px solid #999;
+  position: relative;
+}
+
+.ta1 td.active:after{
+ content: "";
+ position: absolute;
+ top: 10px; left: 5px;
+ height: 70%;
+ border-left: 5px solid #889EF0;
+}
+
+.ta1 td:hover:after{
+ content: "";
+ position: absolute;
+ top: 10px; left: 5px;
+ height: 70%;
+ border-left: 5px solid #889EF0;
+}
+
+.m-section{
+  margin-bottom: 30px;
+}
+
+.m-info{
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 15px;
+}
+
+.m-info-head{
+  float: left;
+  padding: 8px 32px 8px 0;
+  width:20%;
+  text-align: center;
+}
+
+.m-info-content{
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.m-h3{
+  color: red;
+}
+
+.m-h{
+  margin-left: 52px;
+  margin-right: 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.m-tension{
+  color:red;
+  font-weight: bold;
+}
+
+.m-point{
+  color:red;
+}
+
+.m-inline{
+  background-color: #ccc;
+}
+
+.m-img{
+  float: left;
+  width: 30%;
+  margin: 10px 20px;
+}
+
+.m-s-coment{
+  color: blue;
+}
+
+.m-coment{
+  color:black;
+}
+
+.m-box.m-coment:hover{
+  color: blue;
+}
+
+.m-box{
+  overflow: hidden;
+  border: 1px solid #999;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.m-box::before{
+  content: "→";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.m-box:hover::after{
+  content: "→";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: black;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.m-box-none{
+  border: 1px solid #999;
+}
+
+.m-indent{
+  padding-left:1em;
+  text-indent:-1em;
+  letter-spacing: -.1em;
+}
+
+section a{
+  text-decoration: none;
+}
+
+.wide-link{
+  display: block;
+  text-decoration:none;
+}
+
+.english{
+  font-size: 14px;
+  color: gray;
+}
+
+aside{
+  float: right;
+  width: 20%;
+  margin-bottom: 20px;
+  border-top: 1px solid #999;
+}
+
+aside li{
+  list-style: none;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+h4{
+  margin-top:10px;
+  border-top: 3px solid blue;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.point{
+  color: red;
+}
+
+.tension{
+  color: red;
+}
+
+.new{
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding:3px;
+  border-radius: 5px;
+  vertical-align: top;
+}
+
+.past-log{
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.side_item2 li{
+  font-size: 10px;
+}
+
+.sample1-pic{
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.sample1-text{
+  display: inline-block;
+  /* vertical-align: top; */
+}
+
+.company-main{
+  font-weight: bolder;
+  text-align: center;
+}
+
+.comapny-text{
+  font-size: 10px;
+  text-align: center;
+}
+
+.p-end1{
+  margin-bottom:100px;
+}
+
+.p-end2{
+  margin-bottom:300px;
+}
+
+.form{
+  padding: 0 20px;
+}
+
+.f-name{
+  padding: 10px 20px 10px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.f-n-info{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+
+
+.i-name{
+  width: 40%;
+  margin-left: 10px;
+}
+
+.f-address{
+  padding: 10px 20px 10px;
+  border-bottom: 1px solid#999;
+}
+
+.f-a-info{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+
+.f-coment{
+  padding: 10px 20px 10px;
+  border-bottom: 1px solid #999;
+}
+
+.f-c-info{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+
+.f-submit{
+  text-align: center;
+}
+
+
+footer section{
+  text-align: center;
+  background-color: blue;
+  color:white;
+  width: 100%;
+}

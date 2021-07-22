@@ -33,7 +33,7 @@
           </li>
  
           <li class="h-list">
-            <a href="#">
+            <a href="company.html">
               <div class="h-l-box">
                 <div class="h-l-top">
                   会社概要
@@ -96,7 +96,9 @@
       </nav>
     </header>
     <div class="h-imagebox">
-      <img class="h-image" src="img/main1.jpg" alt="ヘッダーの画像">
+      <p id="test_img3">
+        <img class="h-image" src="img/main1.jpg" alt="ヘッダーの画像">
+      </p>
     </div>
     <!-- mainとsideを一まとまりにしたほうが余白の調整がしやすい
     contentで囲む -->
@@ -250,4 +252,24 @@
     </footer>
   </div>
 </body>
+<script>
+  let setImgFunc2 = (function(){
+    let imgList = {image1:"main1.jpg", image2:"main2.jpg", image3:"main3.jpg"};
+    let num = 1;
+    let imgPath;
+    return function() {
+      num++;
+      imgPath = "img/"+imgList['image'+num];
+      testImg = document.querySelector('#test_img3 img').src = imgPath;
+      if (num === 3) {
+        num = 0;
+      } 
+    }
+  })();
+
+  setInterval(function(){
+    setImgFunc2();
+  }, 4000)
+</script>
+  
 </html>

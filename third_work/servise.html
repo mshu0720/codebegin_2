@@ -4,173 +4,195 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <title>link</title>
+  <title>TEST2</title>
+  <link rel="stylesheet" href="css/style_anser.css">
+  <!-- リセットCSSするためのURL -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> -->
 </head>
 <body>
   <div class="container">
-
-    <header>
-      <h1><img  class="logo" src ="img/logo.png" alt="logo"></h1>
-      <nav>
-        <table class="ta1">
-          <tbody>
-            <tr>
-              <th><a href="#" class="wide-link">ホーム
-                <br>
-                <div class="english">HOME</div></th></a>
-
-              <td><a href="./company.html" class="wide-link">会社概要
-                <br>
-                <div class="english">COMPANY</div></td></a>
-                
-              <td><a href="#" class="wide-link">サービス
-                <br>
-                <div class="english">SERVICE</div></td></a>
-
-              <td><a href="#" class="wide-link">採用情報
-                <br><div class="english">RECRIT</div></td></a>
-
-              <td class="active"><a href="#" class="wide-link">リンク
-                <br><div class="english">LINK</div></td></a>
-
-              <td><a href="#" class="wide-link">お問い合わせ
-                <br><div class="english">CONTACT</div></td></a>
-            </tr>
-          </tbody>
-        </table>
+    <header class="header">
+      <!-- h-はheaderのh -->
+      <div class="h-title">
+        <img class="h-logo" src="img/logo.png" alt="title">
+      </div>
+      <nav class="h-nav">
+        <ul class="h-menu">
+          <!-- 今いるページへクラスを与える　active -->
+          <li class="h-list active">
+            <a href="#">
+              <div class="h-l-box">
+                <div class="h-l-top">
+                  ホーム
+                </div>
+                <div class="h-l-bottom">
+                  HOME
+                </div>
+              </div>
+            </a>
+          </li>
+ 
+          <li class="h-list">
+            <a href="#">
+              <div class="h-l-box">
+                <div class="h-l-top">
+                  会社概要
+                </div>
+                <div class="h-l-bottom">
+                  COMPANY
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="#">
+              <div class="h-l-box">
+                <div class="h-l-top">
+                  サービス
+                </div>
+                <div class="h-l-bottom">
+                  SARVICE
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="#">
+              <div class="h-l-box">
+                <div class="h-l-top">
+                  採用情報
+                </div>
+                <div class="h-l-bottom">
+                  RECRIT
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="#">
+              <div class="h-l-box">
+                <div class="h-l-top">
+                  リンク
+                </div>
+                <div class="h-l-bottom">
+                  LINK
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="h-list">
+            <a href="#">
+              <div class="h-l-box">
+                <div class="h-l-top">
+                  お問い合わせ
+                </div>
+                <div class="h-l-bottom">
+                  CONTACT
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <div class="h-imagebox">
+      <img class="h-image" src="img/main1.jpg" alt="ヘッダーの画像">
+    </div>
+    <!-- mainとsideを一まとまりにしたほうが余白の調整がしやすい
+    contentで囲む -->
+  <div class="content">
+    <main class="main">
+      <section class="m-section">
+        <a href="#">
+          <div class="card">
+            <img src="img/sample1.jpg" alt="リンク先の画像">
+            <h4>Sample Title</h4>
+            <p>
+              ここに説明が入ります。
+            </p>
+          </div>
+        </a>
 
-    <div class="content">
-
-    
-      <main>  
-          <!-- セクション１ -->
-          <section class="m-section">
-            <h2>リンク</h2>
-            <div class="m-h">見出しが必要であればここを使います</div>
-            <dl class="m-info">
-              
-              <dt class="m-info-head"><a href="#">サイト名</a></dt>
-              <dd class="m-info-content"> ここに説明など入れて下さい。サンプルテキスト。</dd>
-              <dt class="m-info-head"><a href="#">サイト名</a></dt>
-              <dd class="m-info-content"> ここに説明など入れて下さい。サンプルテキスト。</dd>
-              <dt class="m-info-head"><a href="#">サイト名</a></dt>
-              <dd class="m-info-content"> ここに説明など入れて下さい。サンプルテキスト。</dd>
-              <dt class="m-info-head"><a href="#">サイト名</a></dt>
-              <dd class="m-info-content"> ここに説明など入れて下さい。サンプルテキスト。</dd>
-              <dt class="m-info-head"><a href="#">サイト名</a></dt>
-              <dd class="m-info-content"> ここに説明など入れて下さい。サンプルテキスト。</dd>
-              <dt class="m-info-head"><a href="#">サイト名</a></dt>
-              <dd class="m-info-content"> ここに説明など入れて下さい。サンプルテキスト。</dd>
-            </dl>
-          </section>
-            
-      </main>
-      
-      <!-- サイドバー１ -->
-    <aside>
-      <div class="side-bar">
-        
-        <div class="side_item1">
-            <h4>Menu</h4>
-            <ul>
-              <li><a href="#">メニュー</a></li>
-              <li><a href="#">メニュー</a></li>
-             <li><a href="#">メニュー</a></li>
-           </ul>
-        </div>
-        
-        <!-- サイドバー2 -->
-        <div class="side_item1">
-            <h4>Menu</h4>
-            <ul>
-              <li><a href="#">メニュー</a></li>
-              <li><a href="#">メニュー</a></li>
-              <li><a href="#">メニュー</a></li>
-            </ul>
-        </div>
-        <!-- サイドバー3 -->
-        <div class="side_item2">
-            <h4>製品情報</h4>
-            <ul>
-              <li>
-                <div class="sample1-pic">
-                       <img src="./img/sample1.jpg" width="30px">
-                      </div>
-                      <div class="sample1-text">
-                        <a href="#">製品情報</a><br>
-                        簡単な説明をここに入れます。</div></li>
-                        
-                        <li>
-                          <div class="sample1-pic">
-                            <img src="./img/sample1.jpg" width="30px">
-                          </div>
-                          <div class="sample1-text">
-                            <a href="#">製品情報</a><br>
-                            簡単な説明をここに入れます。</div></li>
-                            
-                            <li>
-                              <div class="sample1-pic">
-                                <img src="./img/sample1.jpg" width="30px">
-                              </div>
-                              <div class="sample1-text">
-                                <a href="#">製品情報</a><br>
-                                簡単な説明をここに入れます。</div></li>
-                              </ul>
-                          </div>
-                          
-                          <!-- サイドバー3 -->
-                          <div class="side_item2">
-                              <h4>製品情報</h4>
-                              <ul>
-                                <li>
-                                  <div class="sample1-pic">
-                                    <img src="./img/sample1.jpg" width="30px">
-                                  </div>
-                                  <div class="sample1-text">
-                                    <a href="#">製品情報</a><br>                                    簡単な説明をここに入れます。</div></li>
-                                    
-                                    <li>
-                                      <div class="sample1-pic">
-                                        <img src="./img/sample1.jpg" width="30px">
-                                      </div>
-                                      <div class="sample1-text">
-                                        <a href="#">製品情報</a><br>
-                                        簡単な説明をここに入れます。</div></li>
-                 
-                  <li>
-                    <div class="sample1-pic">
-                      <img src="./img/sample1.jpg" width="30px">
-                    </div>
-                    <div class="sample1-text">
-                      <a href="#">製品情報</a><br>
-                      簡単な説明をここに入れます。</div></li>
-                    </ul>
-                </div>
-                
-                <!-- サイドバー5 -->
-                <div class="side_item3">
-                    <h4>運営</h4>
-                    <ul>
-                      <li><div class="company-main">株式会社SAMPLE COMPANY</div>
-                        <div class="comapny-text">東京都XX区XXXXビル3F<br>
-                          TEL:03-0000-0000<br>
-                          (AM9:00〜PM5:00 土日祝休み)</div></li>
-                        </ul>
-                      </div>
-                    </aside>
-
-      </div>
-                    
-                    
-                    <footer>
-                      <section>
-                        Copyright&copy; <a href="#">SAMPLE SITE</a> All Rights Reserved.
-                        <div class="footer-under">
-              《<a href="#">Web Design:Template-Party</a>》
+          
       </section>
+      
+    </main>
+    <aside class="side">
+      <div class="s-framebox">
+        <h4 class="s-h4">Menu</h4>
+        <ul class="s-menu">
+          <li class="s-list"><a href="#">メニュー</a></li>
+          <li class="s-list"><a href="#">メニュー</a></li>
+          <li class="s-list"><a href="#">メニュー</a></li>
+        </ul>
+      </div>
+      <div class="s-box">
+        <h4 class="s-h4">Menu</h4>
+        <ul class="s-menu">
+          <li class="s-list"><a href="#">メニュー</a></li>
+          <li class="s-list"><a href="#">メニュー</a></li>
+          <li class="s-list"><a href="#">メニュー</a></li>
+        </ul>
+      </div>
+      <div class="s-framebox">
+        <h4 class="s-h4">製品情報</h4>
+        <ul class="s-menu">
+          <li class="s-list"><a href="#">
+            <img class="s-img" src="img/sample1.jpg" alt="製品情報の画像">
+            <div class="s-l-title">製品情報</div>
+            <div class="s-l-description">簡単な説明をここに入れます。</div>
+          </a></li>
+          <li class="s-list"><a href="#">
+            <img class="s-img" src="img/sample1.jpg" alt="製品情報の画像">
+            <div class="s-l-title">製品情報</div>
+            <div class="s-l-description">簡単な説明をここに入れます。</div>
+          </a></li>
+          <li class="s-list"><a href="#">
+            <img class="s-img" src="img/sample1.jpg" alt="製品情報の画像">
+            <div class="s-l-title">製品情報</div>
+            <div class="s-l-description">簡単な説明をここに入れます。</div>
+          </a></li>
+          
+        </ul>
+      </div>
+      <div class="s-box">
+        <h4 class="s-h4">製品情報</h4>
+        <ul class="s-menu"> 
+        <li class="s-list"><a href="#">
+          <img class="s-img" src="img/sample1.jpg" alt="製品情報の画像">
+          <div class="s-l-title">製品情報</div>
+          <div class="s-l-description">簡単な説明をここに入れます。</div>
+        </a></li>
+        <li class="s-list"><a href="#">
+          <img class="s-img" src="img/sample1.jpg" alt="製品情報の画像">
+          <div class="s-l-title">製品情報</div>
+          <div class="s-l-description">簡単な説明をここに入れます。</div>
+        </a></li>
+        <li class="s-list"><a href="#">
+          <img class="s-img" src="img/sample1.jpg" alt="製品情報の画像">
+          <div class="s-l-title">製品情報</div>
+          <div class="s-l-description">簡単な説明をここに入れます。</div>
+        </a></li>
+        </ul>
+      </div>
+      <div class="s-framebox">
+        <h4 class="s-h4">運営</h4>
+        <div class="s-company-title">
+          株式会社SAMPLE COMPANY
+        </div>
+        <div class="s-company-info">
+          東京都XX区XXXXビル3F<br>
+          TEL:03-0000-0000<br>
+          (AM9:00〜PM5:00 土日祝休み)
+        </div>
+      </div>
+    </aside>
+  </div>
+    <footer class="footer">
+      Copyright&copy; <a href="#">SAMPLE SITE</a> All Rights Reserved.
+      <div class="footer-under">
+        《<a href="#">Web Design:Template-Party</a>》
+      </div>
     </footer>
   </div>
 </body>
