@@ -8,6 +8,10 @@ body{
   margin: 0 auto;
 }
 
+/* ======================================================== */
+/* headerのセレクター */
+/* ======================================================== */
+
 .h-title{
   height: 100px;
   border-top: 5px solid blue;
@@ -107,10 +111,17 @@ body{
   height: auto;
 }
 
+/* ======================================================== */
+/* コンテンツのセレクター */
+/* ======================================================== */
 .content{
   padding: 24px;
   overflow: hidden;
 }
+
+/* ======================================================== */
+/* mainのセレクター */
+/* ======================================================== */
 
 .main{
   float: left;
@@ -201,8 +212,25 @@ body{
 }
 
 .m-inline{
-  background-color: #ccc;
+  background: #ccc;
 }
+
+.m-link{
+  text-decoration: underline;
+}
+
+.m-ta1-h{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.m-imagebox{
+ overflow: hidden;
+}
+
+/* ======================================================== */
+/* pタグのセレクター */
+/* ======================================================== */
 
 p a{
   text-decoration: underline;
@@ -212,13 +240,15 @@ p a:hover{
   text-decoration: none;
 }
 
-
+/* ======================================================== */
+/* tableのセレクター */
+/* ======================================================== */
 .ta1{
   width: 100%;
   margin: 0 auto 20px;
+  line-height: 2;
 }
-
-.ta1, .ta1 td, .ta1 th {
+.ta1, .ta1 td, .ta1 th{
   border: 1px solid #ccc;
   padding: 10px 15px;
   word-break: break-all;
@@ -235,6 +265,11 @@ p a:hover{
   vertical-align: middle;
 }
 
+.ta1 th.tamidashi{
+  width: auto;
+  text-align: left;
+}
+
 .ta1 td{
   text-align: left;
 }
@@ -242,6 +277,10 @@ p a:hover{
 .ta1 td a{
   color: #666;
 }
+
+/* ======================================================== */
+/* Formのセレクター */
+/* ======================================================== */
 
 input{
   width: 60%;
@@ -258,6 +297,10 @@ textarea{
 form{
   text-align: center;
 }
+
+/* ======================================================== */
+/* リンク設定ありのカード */
+/* ======================================================== */
 
 .card{
   border: 1px solid #ccc;
@@ -290,6 +333,11 @@ a{
   color: #666;
 }
 
+a:hover{
+  text-decoration: none;
+  color: blue;
+}
+
 .card h4{
   color: blue;
 }
@@ -306,6 +354,56 @@ a{
   text-align: center;
 }
 
+.card:hover::before{
+  content: "→";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+/* ======================================================== */
+/* リンク設定なしのカード */
+/* ======================================================== */
+
+.card-none{
+  border: 1px solid #ccc;
+  padding: 20px;
+  overflow: hidden;
+  line-height: 2;
+  position: relative;
+  box-shadow: 0px 5px 10px #ccc;
+  /* linear-gradientは第1引数が下（白）、第2引数が上（黒）へと
+  グラデーションする。 */
+  background: linear-gradient(#fff,#ddd);
+}
+
+.card-none:hover{
+  box-shadow: 0px 10px 20px #ccc;
+  /* 上に要素を動かしたい為、マイナスをつける。 */
+  transform: translateX(-5px);
+  /* 0.3秒かけて、動作 */
+  transition: .3s;
+}
+
+.card-none img{
+  width: 25%;
+  float: left;
+  margin-right: 10px;
+}
+
+.card-none h4{
+  color: blue;
+}
+
+/* ======================================================== */
+/* ======================================================== */
+/* サイドのセレクター */
+/* ======================================================== */
 .side{
   float: right;
   width: 25%;
@@ -380,6 +478,10 @@ text-align: center;
 line-height: 1.5;
 }
 
+/* ======================================================== */
+/* footerのセレクター */
+/* ======================================================== */
+
 .footer{
   text-align:center;
   font-size:13px;
@@ -405,3 +507,7 @@ footer a{
 footer a:hover{
   color: blue;
 }
+
+/* ======================================================== */
+/* レスポンシブのセレクター */
+/* ======================================================== */
