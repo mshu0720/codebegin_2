@@ -511,3 +511,32 @@ footer a:hover{
 /* ======================================================== */
 /* レスポンシブのセレクター */
 /* ======================================================== */
+
+@media screen and (max-width: 480px) {
+ .container {
+   width: 480px;
+ }
+  }
+
+@media screen and (max-width: 800px) {
+ .container {
+   width: 800px;
+ }
+ .side {
+   float: none;
+   width:100%;
+ }
+
+ .main {
+   width: 100%;
+ }
+
+
+  }
+
+@media screen and (max-width: 1220px) {
+ .container {
+   width: 100%;
+ }
+
+  }
