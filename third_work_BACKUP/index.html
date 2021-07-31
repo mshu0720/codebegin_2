@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/style3.css">
   <!-- リセットCSSするためのURL -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -16,17 +15,8 @@
       <!-- h-はheaderのh -->
       <div class="h-title">
         <img class="h-logo" src="img/logo.png" alt="title">
-        <span class="nav_toggle">
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
       </div>
-
       <nav class="h-nav">
-        <!-- <div id="n-none" style="display: none;"> -->
-
-        
         <ul class="h-menu">
           <!-- 今いるページへクラスを与える　active -->
           <li class="h-list active">
@@ -104,9 +94,6 @@
           </li>
         </ul>
       </nav>
-<!-- 
-    </div> -->
-
     </header>
     <div class="h-imagebox">
       <p id="test_img3">
@@ -284,31 +271,5 @@
     setImgFunc2();
   }, 4000)
 </script>
-
-<script>
-  $('.nav_toggle').on('click', function () {
-  $('.nav_toggle, .h-nav, .h-list, .h-l-box, .h-l-top, .h-l-bottom').toggleClass('show');
   
-});
-</script>
-
-<script>
-  document.getElementById("n-none").style.display ="none";
-
-  function disp() {
-    const displaybf = document.getElementById("n-none");
-    
-    if(n-none.style.display =="block"){
-      n-none.style.display =="none";
-    }else{
-      n-none.style.display =="block";
-
-    }
-    
-}
-</script>
-
-
-
-
 </html>
