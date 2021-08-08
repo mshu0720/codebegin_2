@@ -508,35 +508,136 @@ footer a:hover{
   color: blue;
 }
 
+#nav-open span, #nav-open span:before, #nav-open span:after{
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: #666;
+  content: "";
+  cursor: pointer;
+}
+
+/* 3本線の考え方 */
+/* ボックスの高さが100px
+真ん中の線：beforeが50pxになる用に構成
+38＋12（-12)=50 */
+
+#nav-open span{
+  top: 38px;
+  right: 30px;
+}
+#nav-open span:before{
+  bottom: -12px;
+}
+#nav-open span:after{
+  bottom: -24px;
+}
+
+#nav-contents{
+  /* display: none; */
+}
+
+.nav-invisible{
+  display: none;
+}
+
+#nav-contents{
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  background: black;
+  transition: .3s;
+  opacity: 0;
+}
+/* 関節セレクター　1がクリックしたら２を表示する 
+チルダーをつかう。*/
+#nav-input:checked ~ #nav-contents{
+  opacity: .8;
+}
+
+.sp-menu-list{
+  border-bottom: 1px solid white;
+  text-align: left;
+  line-height: 2.0;
+  padding: 16px;
+}
+
+.sp-menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.sp-menu-top{
+  font-size: 18px;
+}
+
+.sp-menu-bottom{
+  font-size: 11px;
+}
+
+
 /* ======================================================== */
 /* レスポンシブのセレクター */
 /* ======================================================== */
 
-@media screen and (max-width: 480px) {
- .container {
-   width: 480px;
- }
-  }
+@media screen and (max-width: 780px) {
+ body{
+   font-size: 12px;
+   line-height: 1.5;
+ } 
+.container{
+  /* 元々1200pxに指定している為、字が小さくなるのを防ぐ役割。割合で指定 */
+  width:98%;
+}
 
-@media screen and (max-width: 800px) {
- .container {
-   width: 800px;
- }
- .side {
+.h-title .h-logo{
+  width: 60%;
+}
+
+.h-nav{
+ display:none;
+}
+
+.main{
    float: none;
-   width:100%;
+   width: auto;
+ } 
+.m-h2, .m-h3{
+  font-size: 16px;
+  padding: 7px 6px 7px 8px;
+}
+.m-h2::first-letter{
+  padding-left: 8px;
+}
+
+.m-info-date{
+  font-size: 8px;
+}
+.m-info-content{
+  font-size: 8px;
+  line-height: 1.5;
+}
+.m-info-new{
+  font-size: 8px;
+  padding: 1px 2px;
+}
+.m-log a{
+  font-size:12px;
+}
+ .m-img{
+   /* 画像のサイズを合わす常套手段 */
+   max-width: 100%;
+   height: auto;
+ }
+ .contents{
+   padding: 2%;
  }
 
- .main {
-   width: 100%;
- }
+.side{
+  float: none;
+  width: auto;
+}
 
-
-  }
-
-@media screen and (max-width: 1220px) {
- .container {
-   width: 100%;
- }
-
-  }
+}
