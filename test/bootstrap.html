@@ -24,28 +24,28 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="#">column</a>
+            <a class="nav-link text-white" href="column">column</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Flex</a>
+            <a class="nav-link text-white" href="#flex">Flex</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">tab</a>
+            <a class="nav-link text-white" href="#tab">tab</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Embeds</a>
+            <a class="nav-link text-white" href="#Embeds">Embeds</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">modal</a>
+            <a class="nav-link text-white" href="#modal">modal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">card</a>
+            <a class="nav-link text-white" href="#card">card</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">accordion</a>
+            <a class="nav-link text-white" href="#accordion">accordion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">contactform</a>
+            <a class="nav-link text-white" href="#contactform">contactform</a>
           </li>
         </ul>
       </div>
@@ -95,36 +95,406 @@
       </button>
     </div>
   </div>
-<!-- yはtop とbottomを指す -->
-   <div class="container bg-white py-5 my-5">
-     <!-- Bootstrapの特徴 -->
-     <div id="column">
-       <h2 class="text-center py-3">Bootstrapの特徴</h2>
-       <div class="row">
-         <div class="col-md-4 col-12">
-           <img class="img-fluid" src="img/img4.jpg" alt="">
-         </div>
-         <div class="col-md-4 col-12">
-           <img class="img-fluid" src="img/img5.jpg" alt="">
-         </div>
-         <div class="col-md-4 col-12">
-           <img class="img-fluid" src="img/img6.jpg" alt="">
-         </div>
-       </div>
-     </div>
 
-   </div>
-  
+  <!-- yはtop とbottomを指す -->
+  <div class="container bg-white py-5 my-5">
+    <!-- Bootstrapの特徴 -->
+    <div id="column">
+      <h2 class="text-center py-3">Bootstrapの特徴</h2>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="img/img4.jpg" alt="">
+        </div>
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="img/img5.jpg" alt="">
+        </div>
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="img/img6.jpg" alt="">
+        </div>
+      </div>
+    </div>
 
-  <!-- Optional JavaScript; choose one of the two! -->
+    <!-- お客様の声 -->
+    <div id="flex">
+      <h2 class="text-center py-3">お客様の声</h2>
+      <!-- レスポ対応カラム落ち時、右側の写真が上に持ってきたい際は
+      wrap-reverseを使う。 -->
+      <div class="d-flex flex-wrap-reverse jastyfy-content-center">
+        <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+          テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
+        </div>
+        <div class="col-md-6 col-12 p-0 align-self-center">
+          <img class="img-fluid" src="img/img7.jpg" alt="">
+        </div>
+      </div>
+      <div class="d-flex flex-wrap jastyfy-content-center">
+        <div class="col-md-6 col-12 p-0 align-self-center">
+          <img class="img-fluid" src="img/img8.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
+          テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
+        </div>
+      </div>
+    </div>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+    <!-- BootStrapのタブ -->
+    <div id="tab">
+      <h2 class="text-center py-3">BpptStrapのタブ</h2>
+      <div class="tab">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item col-4 p-0" role="presentation">
+            <a class="nav-link active text-center" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+              type="button" role="tab" aria-controls="home" aria-selected="true">グリッドシステム</a>
+          </li>
+          <li class="nav-item col-4 p-0" role="presentation">
+            <a class="nav-link text-center" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+              type="button" role="tab" aria-controls="profile" aria-selected="false">oocss</a>
+          </li>
+          <li class="nav-item col-4 p-0" role="presentation">
+            <a class="nav-link text-center" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">豊富なコンポーネント</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="col-md-8 col-12 my-5 mx-auto">
+              Bootstrapでは横幅を１２個の列に分けたグリッドシステムを採用したデザインになっています。 １２は２,3,4,6で割り切れるのでレスポンシブデザインが用意になっています
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="col-md-8 col-12 my-5 mx-auto">
+              BootStrapではOOCSS（Object-Oriented CSS）というオブジェクト指向CSSが採用されています。 構造と見た目を切り離した設計になります。
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="col-md-8 col-12 my-5 mx-auto">
+              このサイトでも使われているようにBootstrapでは様々なコンポーネントが用意されています。 公式サイトで調べながら使いながら慣れていきましょう
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!--Youtube  -->
+    <div id="Embeds">
+      <h2 class="text-center py-3">Youtube</h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/fou-ZR9LhGM" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--よくある質問  -->
+    <div id="modal">
+      <h2 class="text-center py-3">よくある質問</h2>
+      <div class="row">
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            何ヶ月ぐらい勉強すれば稼げるようになりますか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">何ヶ月ぐらい勉強すれば稼げるようになりますか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  学習期間は半年から１年は必要だと思います。ただ、早い人であれば3ヶ月ほどで稼いでいる人もいます。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            WEB制作で必要なスキルは？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">WEB制作で必要なスキルは？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  HTML,CSS,JQueryは必須スキルです。その他にJavascript,Bootstrap。
+                  その他デザインツール(Photoshop,XD,Figma)などのデータからのコーディングが出来ると良いです
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            おすすめのPCはありますか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">おすすめのPCはありますか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  フロントエンドエンジニアはMacBookを使っている人が多いです。 ただ、まずは持っているPCで勉強を始めるのが良いと思います
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 pt-3">
+          <!-- Button trigger modal -->
+          <div class="text-dark border p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            プログラミングは独学で勉強可能ですか？
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">プログラミングは独学で勉強可能ですか？</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  プログラミングは独学で身に付けることは出来ると思います。 しかし、初心者のうちはメンターをつけるなど解決方法がわからなくなった時に聞ける人を作るのがおすすめです
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--実績  -->
+    <div id="card">
+      <h2 class="text-center py-3">実績</h2>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <img src="img/img9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Amazon Kindle</h5>
+              <p class="card-text">WEB構築ランキング,アプリケーション入門書部門,コンピュータ・ITランキング１位 になりました。 画像や動画を使って分かりやすく解説をしました</p>
+              <a href="#" class="btn btn-primary">Amazonで見つける</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <img src="img/img10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">YouTube</h5>
+              <p class="card-text">プログラミングの学習方法やWEBサイト制作 の学習を中心に発信しています。</p>
+              <a href="#" class="btn btn-primary">Youtubeで見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <img src="img/img11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Twitter</h5>
+              <p class="card-text">プログラミングの学習方法を中心に発信して います。自身の経験をベースに発信しています</p>
+              <a href="#" class="btn btn-primary">Twitterで見る</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--よくある質問 -->
+    <div id="accordion">
+      <h2 class="text-center py-3">よくある質問</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              プログラミングスキルは必要ですか？
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              稼げるようになりますか？
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              追加でかかる費用はありますか
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              サーバー代、ドメイン代が必要になります。 おすすめのサーバーはエックスサーバー 、ドメインはお名前ドメインがおすすめです
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--お問い合わせ -->
+    <div id="contactform">
+      <h2 class="text-center py-3">お問い合わせ</h2>
+      <!-- col8に対して左右を中央寄せ調整：margin-auto -->
+      <form class="row g-3 needs-validation col-8 mx-auto" novalidate>
+        <div class="col-12 mb-3">
+          <label for="validationCustom01" class="form-label">苗字</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <!-- invalid-feedbackは入力エラーを表示 -->
+          <div class="invalid-feedback">
+            苗字をいれてください。
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="validationCustom02" class="form-label">名前</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            名前をいれてください。
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="validationCustom04" class="form-label">住所</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>東京</option>
+            <option>神奈川</option>
+            <option>千葉</option>
+            <option>埼玉</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              同意する。
+            </label>
+            <div class="invalid-feedback">
+              同意するにはチェックをいれてください。
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+      </script>
+      <footer class="bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="py-4">
+                <h4 class="d-inline-block py-3 border-bottom border-info">Profile</h4>
+              </div>
+              <div class="mx-5">
+                <img class="img-fluid rounded-circle" src="img/img12.jpg" alt="">
+              </div>
+              <p>
+                プログラミング・ブログを愛しています 普通の学生→WEB制作で稼ぎながらフリーランスエンジニア 自身の経験を活かし高校生から大人まで100人以上にプログラミングを教え電子書籍でAmazon
+                WEB構築ランキング1位｜WEBで約月60万円稼ぎつつ大学生
+              </p>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="py-4">
+                <h4 class="d-inline-block py-3 border-bottom border-info">Portfolio</h4>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#">YouTube Channel</a></li>
+                <li class="list-group-item"><a href="#">Portfolio Site</a></li>
+                <li class="list-group-item"><a href="#">Amazon</a></li>
+                <li class="list-group-item"><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="py-4">
+                <h4 class="d-inline-block py-3 border-bottom border-info">Portfolio</h4>
+              </div>
+              <a class="twitter-timeline" data-lang="ja" data-height="500"
+                href="https://twitter.com/shimo_tmk?ref_src=twsrc%5Etfw">Tweets by shimo_tmk</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+        <div class="bg-dark text-white text-center p-3">
+          Copyright - tomoki shimomura, 2020 All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
