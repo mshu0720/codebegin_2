@@ -40,8 +40,8 @@
 
 .right-menu li{
   /* inline-blockを指定するとliの・が消える */
- display: inline-block;
- padding-top: 20px;
+  padding-top: 20px;
+  display: inline-block;
 }
 
 .right-menu li a{
@@ -85,3 +85,56 @@ h1{
  border-radius: 5px;
  margin-top: 10px;
 }
+
+.second-title{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.second-colum{
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+.mail,.time,.world{
+  text-align: center;
+  width: 350px;
+  height: 20px;
+}
+
+.third-colum{
+  background-color: #20b2aa;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 400px;
+}
+
+.fa-gift{
+  margin-top: 30px;
+}
+
+h2.third{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+p.third{
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.gift{
+  background-color: lightpink;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
